@@ -23,13 +23,4 @@ describe SnowRescueSvc do
     end
   end
 
-  context 'when temperature is gt 0' do
-    let(:temperature) { 2 }
-    it 'does not send a sander ' do
-      expect(municipal_svc).not_to receive(:send_sander)
-      subject.check_and_perform_rescue
-    end
-  end
-
-
 end

@@ -5,6 +5,6 @@ class SnowRescueSvc
   end
 
   def check_and_perform_rescue
-    @municipal_svc.send_sander if @weather_svc.avg_temperature_celcius < 0
+
   end
 end
